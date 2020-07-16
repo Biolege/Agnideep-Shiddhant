@@ -77,6 +77,10 @@
            .form-control{
               background-color: #F5F9FF;
            }
+           .active{
+             border-bottom: 5px solid black;
+             text-decoration: none;
+           }
            @media only screen and (max-width: 600px) {
                /* For mobile phones: */
                   [class*="tas"] {
@@ -177,11 +181,13 @@
                                <div class="w-100"></div>
                                <input class="form-control text rounded mt-2">
                              </div>
-                             <div class="col-sm-3 ml-sm-0 ml-3  " >
+                             <div class="col-sm-3 ml-sm-0 ml-3  addy" >
                                Test List
                                <div class="w-100"></div>
                                <input class="form-control text rounded mt-2">
-                               <div class="w-100" style="text-align:right;">+Add</div>
+                               <div class="w-100" style="text-align:right;">
+                                 <a href="" class="add_field_button">+Add</a>
+                               </div>
                              </div>
                            </div>
                            <div class="row">
@@ -215,5 +221,40 @@
                </div>
             </div>
          </div>
+         <script>
+           $(document).ready(function() {
+             var wrapper = $(".addy"); //Fields wrapper
+             var wrapper1 = $(".addy1"); //Fields wrapper
+             var add_button = $(".add_field_button"); //Add button ID
+             var add_button1 = $(".add_field_button1"); //Add button ID
+
+             var x = 1; //initlal text box count
+
+             $(add_button).click(function(e) { //on add input button click
+               e.preventDefault();
+
+
+
+
+                 //text box increment
+                 $(wrapper).append('<div ><input class="form-control text rounded mt-2"></div>'); //add input box
+                 $(add_button).appendTo(wrapper);
+                 x++;
+
+             });
+             $(add_button1).click(function(e) { //on add input button click
+               e.preventDefault();
+
+
+
+
+                 //text box increment
+                 $(wrapper1).append('<div ><input class="form-control text rounded mt-2"></div>'); //add input box
+                 $(add_button1).appendTo(wrapper1);
+                 x++;
+
+             });
+           });
+         </script>
       </body>
 </html>

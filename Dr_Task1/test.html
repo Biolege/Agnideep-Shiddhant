@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+  perspective: 1000px;
+  background: rebeccapurple;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  float: left;
+  padding: 50px 0;
+}
+
+.card {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.owl-wrapper {
+  transform-style: preserve-3d;
+}
+
+.owl-item {
+  transition: all 250ms ease-out;
+  transform: translate3d(0px, 0px, 0px) scale(1);
+}
+.owl-item.active {
+  transform: translate3d(0px, 0px, -10px) scale(1) rotateY(25deg);
+}
+.owl-item.active + .active {
+  transform: translate3d(0px, 0px, 10px) scale(1);
+}
+.owl-item.active + .active + .active {
+  transform: translate3d(0px, 0px, 20px) scale(1);
+}
+.owl-item.active + .active + .active + .active {
+  transform: translate3d(0px, 0px, 10px) scale(1);
+}
+.owl-item.active + .active + .active + .active + .active {
+  transform: translate3d(0px, 0px, -10px) scale(1) rotateY(-25deg);
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Using Bootstrap 4's Cards with Owl Carousel.</h1>
+      <div class="row">
+         <div class="col-sm-12">
+
+          <div class="carousel-container">
+            <ul>
+              <li>
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <img class="card-img-top" src="https://source.unsplash.com/318x180/?starwars" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
